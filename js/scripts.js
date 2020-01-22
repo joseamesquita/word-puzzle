@@ -2,7 +2,7 @@ $(document).ready(function(){
     $("form#puzzle").submit(function(){
         var sentence = $("#word").val();
         console.log(sentence)
-
+        $("#puzzle").hide();
         result = "";
         for(i = 0; i <= sentence.length - 1; i++){
             if (sentence[i] === "e"){
@@ -35,7 +35,7 @@ $(document).ready(function(){
                 // alert(result)
                 // result.append(sentence[i]);
             }
-
+        
         }
         $(".word").text(result);
 
